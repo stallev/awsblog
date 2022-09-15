@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+
+.technology-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $gutter-lg 0;  
+
+  &__icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+}

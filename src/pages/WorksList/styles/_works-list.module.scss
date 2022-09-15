@@ -1,0 +1,12 @@
+@import '../../../common/styles/variables.scss';
+
+.works-list {
+  &__title {
+    margin-bottom: $gutter-base;
+
+    @media only screen and (min-width: 768px) {
+      width: fit-content;
+      text-align: left;
+    }
+  }
+}

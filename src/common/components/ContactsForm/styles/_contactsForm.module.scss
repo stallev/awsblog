@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+
+.contactsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: $gutter-lg;
+  
+  @media only screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+  }
+}

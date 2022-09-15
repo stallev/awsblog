@@ -1,0 +1,124 @@
+@import '../../../styles/variables.scss';
+
+.works-item {
+  display: flex;
+  flex-direction: column;
+  padding: $gutter-ml 0;
+  border-bottom: 1px solid $color-light-gray;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    @media only screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__image {
+    width: fit-content;
+    max-width: 40%;
+    align-self: center;
+    flex-shrink: 0;
+    border-radius: 10px;    
+
+    @media only screen and (min-width: 768px) {
+      align-self: flex-start;
+      margin-right: $gutter-ml;
+      max-width: 25%;
+    }
+
+    img {
+      border-radius: inherit;
+      border: 2px solid $color-dark-brown;
+    }
+  }
+
+  &__types-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: $gutter-base;
+  }
+
+  &__year {
+    display: inline-block;
+    width: fit-content;
+    margin-right: $gutter-base;
+    padding: 4px 22px;
+    border-radius: 18px;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-bold;
+    background-color: $color-dark-brown;
+  }
+
+  &__type {
+    margin-left: 12px;
+    color: $color-text-gray;
+    font-size: $font-size-xs;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    margin-left: $gutter-base;
+  }
+
+  &__link {
+    display: inline-block;
+    align-self: center;
+    height: fit-content;
+    margin-right: $gutter-base;
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+    color: $color-dark-brown;
+    font-weight: $font-weight-bold;
+
+    &:hover {
+      transition: all .3s linear;
+      color: $color-dark-brown;
+      text-decoration: underline;
+    }
+  }
+
+  &__github-link {
+    align-self: center;
+    max-height: 24px;
+  }
+
+  &__description {
+    text-align: left;
+    font-size: $font-size-xs;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: $line-height-xxs;
+    max-height: calc(#{$line-height-xxs} * 3);
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  &__technologies-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $gutter-sm;
+  }
+
+  &__technologies-item {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: $gutter-base;
+    color: $color-white;
+    background: $color-dark-brown;
+    font-size: $font-size-xxs;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: $gutter-lg;
+
+  &__socials-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: $gutter-ml;
+  }
+
+  &__social-link {
+    display: inline-block;
+
+    &:not(:last-of-type){
+      margin-right: $gutter-ml;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    font-size: $font-size-xxs;
+    line-height: $line-height-xs;
+  }
+}

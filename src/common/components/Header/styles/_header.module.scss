@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+
+.header {
+  &__nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0;
+  }
+
+  &__nav-link {
+    display: inline-block;
+    margin-left: 12px;
+  }
+}

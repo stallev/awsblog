@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+.textarea {
+  position: relative;
+  color: $color-main-text;
+  max-width: 450px;
+  height: 170px;
+  margin-bottom: $gutter-ml;
+
+  @media only screen and (min-width: 768px){
+  }
+
+  &__field {
+    display: inline-block;
+    padding: $gutter-sm $gutter-base;
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    border: 1px solid $color-dark-brown;
+
+    &--error {
+      border: 1px solid red;
+    }
+  }
+}
