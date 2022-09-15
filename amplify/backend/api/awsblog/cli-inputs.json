@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "awsblog",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "D:\\github\\awsblog\\amplify\\backend\\api\\awsblog\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-09-15T16:31:01.791Z",
+      "keyDescription": "MyAPIKey"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authawsblog3708f63c"
+      }
+    ]
+  }
+}
