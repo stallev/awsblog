@@ -1,0 +1,21 @@
+@import '../../../styles/variables.scss';
+
+.button {
+  display: inline-block;
+  padding: 8px 12px;
+  min-width: 150px;
+  width: fit-content;
+  border-radius: 18px;
+  border: 1px solid $color-dark-brown;
+  cursor: pointer;
+  color: $color-main-text;
+  width: fit-content;
+
+  &:hover {
+    transition: all .3s linear;
+    background-color: $color-light-gray;
+  }
+
+  @media only screen and (min-width: 768px){
+  }
+}

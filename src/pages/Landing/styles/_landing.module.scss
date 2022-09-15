@@ -1,0 +1,57 @@
+@import '../../../common/styles/variables.scss';
+
+.landing {
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $gutter-ml;
+
+    &-image{
+      display: inline-block;
+      margin-bottom: 44px;
+    }
+
+    &-my-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-title {
+      margin-bottom: $gutter-md;
+      text-align: center;
+    }
+
+    &-my-description {
+      margin-bottom: $gutter-ml;
+    }
+  }
+
+  &__technology-list {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    background: $color-light-blue;
+
+    @media only screen and (min-width: 420px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (min-width: 650px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  &__works {
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid $color-light-gray;
+      padding-top: $gutter-base;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+.custom-link {
+  &--like-button {
+    padding: 8px $gutter-md;
+    background-color: $color-red;
+    color: $color-white;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+  }
+}

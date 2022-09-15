@@ -1,0 +1,95 @@
+@import '../../../styles/variables.scss';
+
+.modal {
+  &-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $color-black-opacity;
+    z-index: 15;
+
+    &--visible {
+      display: block;
+    }
+  }
+
+  &__container {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-white;
+    padding: $gutter-xl;
+    box-shadow: $shadows-default;
+    outline: none;
+    width: 451px;
+    max-width: calc(100% - 48px);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &--popup-info {
+      width: 250px;
+
+      .text {
+        text-align: center;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 300px;
+      }
+    }
+
+    & > div:first-of-type {
+      @media screen and (min-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      &:not(.modal__container--images-slider) {
+        max-width: 451px;
+      }
+    }
+
+    &.animation-modal {
+      animation: modal 0.5s ease forwards;
+
+      @keyframes modal {
+        from {
+          top: 40%;
+          opacity: 0;
+        }
+
+        to {
+          top: 50%;
+          opacity: 1;
+        }
+      }
+    }
+
+    &-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+
+      &--icon {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+      }
+    }
+
+    &--share {
+      overflow: clip;
+    }
+
+    input[type="submit"] {
+      display: none;
+    }
+  }
+}
