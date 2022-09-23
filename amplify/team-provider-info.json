@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "awsblog3708f63c": {}
+        "awsblog3708f63c": {},
+        "true": {}
       }
     }
   }
