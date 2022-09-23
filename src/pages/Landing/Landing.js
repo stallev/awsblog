@@ -28,32 +28,8 @@ const Landing = () => {
   return (
     <>
       <div className={styles.landing__top}>
-        <Image
-          imageName="author"
-          className={styles['landing__top-image']}
-        />
-        <div className={styles['landing__top-my-info']}>
-          <Text heading1 className={styles['landing__top-title']}>
-            Hi, I am John, Creative Technologist
-          </Text>
-          <Text className={styles['landing__top-my-description']}>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </Text>
-          <CustomLink
-            label="Download resume"
-            to={RoutePath.Landing}
-            isLikeButton
-          />
-        </div>
+        <p>Landing page</p>
       </div>
-      <div className={styles['landing__technology-list']}>
-        {renderMyTechnologies}
-      </div>
-      <div className={styles['landing__works-list']}>
-        {renderMyWorks}
-      </div>
-      <ContactsForm />
-      <div className={styles['landing__contacts']}></div>
     </>
   );
 };
